@@ -1,0 +1,15 @@
+* {
+    font-family: Lato;
+    color: #303030;
+    box-sizing: border-box;
+}
+
+body {
+    color: #303030;
+    background-color: #606060;
+    margin:200px;
+}
+
+h1,h3 {
+    text-align: center;
+}
