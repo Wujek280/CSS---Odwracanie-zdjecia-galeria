@@ -4,8 +4,8 @@
 }
 
 .box {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: none;
     font-size: 0;
     display: inline-block;
@@ -13,38 +13,39 @@
     box-sizing: border-box;
     margin: 0;
     position: absolute;
+    overflow: hidden;
 }
 
 .back {
     transform: rotateY(180deg);
-    font-size: initial;
+    -webkit-transition: .2s all;
+    font-size: 10px;
+    text-align: justify;
     background-color: #fff;
     padding: 20px 20px 20px 20px;
 }
 
 .front {
     transform: rotateY(0deg);
+    -webkit-transition: .2s all;
 }
 
 .box:hover > .back {
-    transform: rotateY(0deg);
-    transition: .5s all;
+    -webkit-transform: rotateY(0deg);
+    -webkit-transition: .3s all;
 }
 
 .box:hover  > .front {
     transform: rotateY(180deg);
-    transition: .5s all;
+    -webkit-transition: .3s all;
 }
 
 
 img {
     display: inline-block;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     position: relative;
     font-size: 0;
 }
-
-
-
 
